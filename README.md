@@ -1,4 +1,4 @@
-# YNU-HPCC at semeval2024-task7
+# Numerical Awareness Abstract Generation proj based on semeval2024-task7 subtask3
 
 The datasets can be found at <https://sites.google.com/view/numeval/data>. Please place them in the respective task directories, and refer to the input parameters for detailed configuration.
 
