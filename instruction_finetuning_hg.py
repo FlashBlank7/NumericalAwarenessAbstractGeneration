@@ -248,8 +248,9 @@ if __name__ == '__main__':
     # parser.add_argument("--data_test_pth", default='./numeval_datasets/ANS-Test_Headline_Generation_Similarity_Search.json', help="dataset_test's path")
     parser.add_argument("--data_train_pth", default='./numeval_datasets/Train_Headline_Generation.json', help="dataset_train's path")
     parser.add_argument("--data_dev_pth", default='./numeval_datasets/Dev_Headline_Generation.json', help="dataset_dev's path")
-    parser.add_argument("--data_test_pth", default='./numeval_datasets/ANS-Test_Headline_Generation.json', help="dataset_test's path")
- 
+    # parser.add_argument("--data_test_pth", default='./numeval_datasets/ANS-Test_Headline_Generation.json', help="dataset_test's path")
+    parser.add_argument("--data_test_pth", default='./Train_Headline_Generation_Similarity_Search.json', help="dataset_test's path")
+
     parser.add_argument("--num_gt_path", default="./numeval_datasets/number_gt.txt", type=str, help="numerical ground truth path")
     parser.add_argument("--num_type_path", default="./numeval_datasets/number_type.txt", type=str, help="type of each summary, 1:Reasoning, 0:Copy")
     parser.add_argument("--has_dev", default=True, help="whether has dev dataset")
