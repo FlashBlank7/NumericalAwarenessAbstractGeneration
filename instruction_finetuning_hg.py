@@ -12,8 +12,10 @@ import os
 
 from moverscore_v2 import word_mover_score, get_idf_dict
 
-from peft import LoraConfig, get_peft_model, prepare_model_for_int8_training, TaskType, PeftModel, PeftConfig
+# from peft import LoraConfig, get_peft_model, prepare_model_for_int8_training, TaskType, PeftModel, PeftConfig
+# prepare_model_for_kbit_training
 
+from peft import LoraConfig, get_peft_model, prepare_model_for_kbit_training, TaskType, PeftModel, PeftConfig
 from bert_score import score
 
 import evaluate
