@@ -257,7 +257,7 @@ if __name__ == '__main__':
     parser.add_argument("--has_demonstrations", default=False, help="whether has demonstrations")
     parser.add_argument("--model_name", default='google/flan-t5-base', help="model name")
     parser.add_argument("--seed", default=42, help="set seed")
-    parser.add_argument("--model_checkpoint", default='', help="model checkpoint's path")
+    parser.add_argument("--model_checkpoint", default='google/flan-t5-large', help="model checkpoint's path")
     parser.add_argument("--task", default='eval', help="train or predict")
     parser.add_argument("--evaluation_strategy", default='epoch', help="evaluation_strategy")
     parser.add_argument("--save_strategy", default='epoch', help="save_strategy")
