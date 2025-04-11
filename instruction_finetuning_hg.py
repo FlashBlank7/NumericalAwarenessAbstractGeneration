@@ -265,8 +265,8 @@ if __name__ == '__main__':
 
     parser.add_argument("--evaluation_strategy", default='epoch', help="evaluation_strategy")
     parser.add_argument("--save_strategy", default='epoch', help="save_strategy")
-    parser.add_argument('--per_device_train_batch_size', type=int, default=16)
-    parser.add_argument('--per_device_eval_batch_size', type=int, default=16)
+    parser.add_argument('--per_device_train_batch_size', type=int, default=8)
+    parser.add_argument('--per_device_eval_batch_size', type=int, default=8)
     parser.add_argument('--lr', type=float, default=5e-5)
     parser.add_argument('--warm_up_radio', type=float, default=0.1)
     parser.add_argument('--gradient_accumulation_steps', default=1, help='gradient_accumulation')
