@@ -260,7 +260,7 @@ if __name__ == '__main__':
     parser.add_argument("--model_checkpoint", default='google/flan-t5-large', help="model checkpoint's path")
     # parser.add_argument("--task", default='eval', help="train or predict")
     parser.add_argument("--task", default='train', help="train or predict")
-n
+
     parser.add_argument("--evaluation_strategy", default='epoch', help="evaluation_strategy")
     parser.add_argument("--save_strategy", default='epoch', help="save_strategy")
     parser.add_argument('--per_device_train_batch_size', type=int, default=16)
