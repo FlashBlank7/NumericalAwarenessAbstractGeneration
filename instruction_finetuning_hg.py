@@ -243,7 +243,7 @@ def run(args):
 
 if __name__ == '__main__':
     parser = argparse.ArgumentParser(description="training code")
-    parser.add_argument("--data_train_pth", default='./numeval_datasets/Train_Headline_Generation_Similarity_Search.json', help="dataset_train's path")
+    parser.add_argument("--data_train_pth", default='./numeval_datasets/Train_Headline_Generation_Similar_Search.json', help="dataset_train's path")
     parser.add_argument("--data_dev_pth", default='./numeval_datasets/Dev_Headline_Generation_Similarity_Search.json', help="dataset_dev's path")
     parser.add_argument("--data_test_pth", default='./numeval_datasets/ANS-Test_Headline_Generation_Similarity_Search.json', help="dataset_test's path")
     # parser.add_argument("--data_train_pth", default='./numeval_datasets/Train_Headline_Generation.json', help="dataset_train's path")
