@@ -96,6 +96,7 @@ def train_and_evaluate(args, tokenizer, tokenized_dataset):
         save_strategy=args.save_strategy,
         gradient_accumulation_steps=args.gradient_accumulation_steps,
         seed = args.seed,
+        run_name="try_train_model"
     )
 
     trainer = Seq2SeqTrainer(
