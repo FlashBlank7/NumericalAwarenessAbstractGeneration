@@ -220,7 +220,9 @@ def run(args):
     datasets = DatasetDict()
 
     if args.task == "train":
-        dataset_train = read_jsonl(data_train_pth)[0][0:100]
+        # dataset_train = read_jsonl(data_train_pth)[0][0:100]
+        dataset_train = read_jsonl(data_train_pth)[0][0:200].copy()
+        dataset_train = dataset_train[0:200]
         dataset_train = Dataset.from_dict(dropout_redundant_hg(dataset_train))
 
         datasets['train'] = dataset_train
