@@ -15,6 +15,8 @@ from moverscore_v2 import word_mover_score, get_idf_dict
 # from peft import LoraConfig, get_peft_model, prepare_model_for_int8_training, TaskType, PeftModel, PeftConfig
 # prepare_model_for_kbit_training
 
+import warnings
+warnings.filterwarnings("ignore", message="Trainer.tokenizer is now deprecated")
 from peft import LoraConfig, get_peft_model, prepare_model_for_kbit_training, TaskType, PeftModel, PeftConfig
 from bert_score import score
 
