@@ -15,7 +15,11 @@ example headline: {{similar_headline}}
 news: {{news}}
 headline: """
 
+    def load_hg_template_DPO(self):
+            self.input_template['instr'] = f"""Generate a headline with numbers for following news: {{news}} """
     # hr= headline reasoning 标题数值推断
+
+
     def load_hr_template(self):
         self.input_template['opt'] = f"""Calculate some value in following news so that the answer can replace then # in masked headline.
 news: {{news}}
